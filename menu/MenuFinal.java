@@ -249,9 +249,12 @@ public class MenuFinal extends JFrame
             beveragePane.add(menuitemButton);
         }
         JTabbedPane tabbedPane = new JTabbedPane();
-
+        
+        
+        ImageIcon b = new ImageIcon("images/burgericon.png");
         JLabel tab1 = new JLabel();
         tab1.setText("Burger");
+        tab1.setIcon(b);
         tab1.setPreferredSize(new Dimension(100,50));
         tab1.setHorizontalAlignment(JLabel.CENTER);
         tabbedPane.addTab(null, burgerPane);
@@ -260,17 +263,19 @@ public class MenuFinal extends JFrame
         //tabbedPane.setOpaque(true);
         
         
-        
+        ImageIcon p = new ImageIcon("images/pizzaicon.png");
         JLabel tab2 = new JLabel();
         tab2.setText("Pizza");
+        tab2.setIcon(p);
         //tab2.setBackground(Color.GREEN);
         tab2.setPreferredSize(new Dimension(100,50));
         tab2.setHorizontalAlignment(JLabel.CENTER);
         tabbedPane.addTab(null, pizzaPane);
         tabbedPane.setTabComponentAt(1, tab2);
         
-        
+        ImageIcon d = new ImageIcon("images/sodaicon.png");
         JLabel tab3 = new JLabel();
+        tab3.setIcon(d);
         tab3.setText("Beverage");
         //tab3.setBackground(Color.GREEN);
         tab3.setPreferredSize(new Dimension(100,50));
