@@ -253,6 +253,7 @@ public class MenuFinal extends JFrame
         JLabel tab1 = new JLabel();
         tab1.setText("Burger");
         tab1.setPreferredSize(new Dimension(100,50));
+        tab1.setHorizontalAlignment(JLabel.CENTER);
         tabbedPane.addTab(null, burgerPane);
         tabbedPane.setTabComponentAt(0, tab1);
         //tabbedPane.setBackgroundAt(0, Color.green);
@@ -262,16 +263,18 @@ public class MenuFinal extends JFrame
         
         JLabel tab2 = new JLabel();
         tab2.setText("Pizza");
-        tab2.setBackground(Color.GREEN);
+        //tab2.setBackground(Color.GREEN);
         tab2.setPreferredSize(new Dimension(100,50));
+        tab2.setHorizontalAlignment(JLabel.CENTER);
         tabbedPane.addTab(null, pizzaPane);
         tabbedPane.setTabComponentAt(1, tab2);
         
         
         JLabel tab3 = new JLabel();
         tab3.setText("Beverage");
-        tab3.setBackground(Color.GREEN);
+        //tab3.setBackground(Color.GREEN);
         tab3.setPreferredSize(new Dimension(100,50));
+        tab3.setHorizontalAlignment(JLabel.CENTER);
         tabbedPane.addTab(null, beveragePane);
         tabbedPane.setTabComponentAt(2, tab3);
         
