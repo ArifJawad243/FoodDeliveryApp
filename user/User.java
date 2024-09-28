@@ -1,7 +1,5 @@
 package user;
-import java.lang.*;
 import java.io.*;
-import javax.swing.*;
 
 public class User {
     private String username;
