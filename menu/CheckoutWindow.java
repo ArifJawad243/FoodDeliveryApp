@@ -161,6 +161,8 @@ public class CheckoutWindow extends JFrame
         bottomPanel.add(totalLabel, BorderLayout.NORTH);
 
         JButton confirmButton = new JButton("Confirm Order");
+        confirmButton.setBackground(Color.green);
+        confirmButton.setForeground(Color.BLACK);
         confirmButton.addActionListener(new ActionListener() 
         {
             public void actionPerformed(ActionEvent e) 
