@@ -11,12 +11,12 @@ import menu.MenuFinal;
 
 public class ProfileFrame extends JFrame {
     public ProfileFrame(User user) {
-        setTitle("User Profile");
-        setSize(500, 400);
-        setVisible(true);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
-        setLayout(new BorderLayout());
+        this.setTitle("User Profile");
+        this.setSize(500, 400);
+        this.setVisible(true);
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.setLocationRelativeTo(null);
+        this.setLayout(new BorderLayout());
         
         ImageIcon burger = new ImageIcon("images/burger.png");
         ImageIcon profileicon = new ImageIcon("images/profileicon.png");
@@ -82,8 +82,8 @@ public class ProfileFrame extends JFrame {
 
         bot.add(closeButton);
         bot.add(updateButton);
-        add(bot, BorderLayout.SOUTH);
-        add(profilePanel, BorderLayout.CENTER);
+        this.add(bot, BorderLayout.SOUTH);
+        this.add(profilePanel, BorderLayout.CENTER);
 
         updateButton.addActionListener(new ActionListener() 
         {
