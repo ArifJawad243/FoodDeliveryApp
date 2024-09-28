@@ -78,16 +78,19 @@ public class UpdateProfileFrame extends JFrame {
 
         JButton saveButton = new JButton("Save");
         saveButton.setPreferredSize(new Dimension(100, 25));
+        saveButton.setBackground(Color.green);
+        saveButton.setForeground(Color.black);
         saveButton.setFocusable(false);
         
         JButton closeButton = new JButton("Close");
         closeButton.setFocusable(false);
+        closeButton.setBackground(Color.white);
         closeButton.setPreferredSize(new Dimension(100, 25));
         
         JPanel bot = new JPanel();
         bot.setLayout(new FlowLayout());
-        bot.add(saveButton);
         bot.add(closeButton);
+        bot.add(saveButton);
         
         BodyPane.add(updatePanel, BorderLayout.NORTH);
 

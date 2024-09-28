@@ -11,12 +11,12 @@ import menu.MenuFinal;
 
 public class ProfileFrame extends JFrame {
     public ProfileFrame(User user) {
-        this.setTitle("User Profile");
-        this.setSize(500, 400);
-        this.setVisible(true);
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setLocationRelativeTo(null);
-        this.setLayout(new BorderLayout());
+    	this.setTitle("User Profile");
+    	this.setSize(500, 400);
+    	this.setVisible(true);
+    	this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+    	this.setLocationRelativeTo(null);
+    	this.setLayout(new BorderLayout());
         
         ImageIcon burger = new ImageIcon("images/burger.png");
         ImageIcon profileicon = new ImageIcon("images/profileicon.png");
@@ -57,17 +57,21 @@ public class ProfileFrame extends JFrame {
         JButton deleteButton = new JButton("Delete User");
         deleteButton.setFocusable(false);
         deleteButton.setPreferredSize(new Dimension(100, 25));
+        deleteButton.setBackground(Color.red);
+        deleteButton.setForeground(Color.black);
         deleteButton.setBounds(0, 140, 100, 30);
         profilePanel.add(deleteButton);
         
 
         JButton updateButton = new JButton("Update");
         updateButton.setFocusable(false);
+        updateButton.setBackground(Color.white);
         updateButton.setPreferredSize(new Dimension(100, 25));
         //updateButton.setHorizontalAlignment(JButton.CENTER);
         
         JButton closeButton = new JButton("Close");
         closeButton.setFocusable(false);
+        closeButton.setBackground(Color.white);
         closeButton.setPreferredSize(new Dimension(100, 25));
         //closeButton.setHorizontalAlignment(JButton.CENTER);
         

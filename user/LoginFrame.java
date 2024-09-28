@@ -12,7 +12,7 @@ import menu.MenuFinal;
 public class LoginFrame extends JFrame {
     public LoginFrame() {
         this.setTitle("Login");
-        this.setSize(500, 600);
+        this.setSize(500, 400);
         this.setVisible(true);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -70,10 +70,12 @@ public class LoginFrame extends JFrame {
 
         JButton loginButton = new JButton("Login");
         loginButton.setPreferredSize(new Dimension(100, 25));
+        loginButton.setBackground(Color.green);
         loginButton.setFocusable(false);
         
         JButton backButton = new JButton("Back");
         backButton.setPreferredSize(new Dimension(100, 25));
+        backButton.setBackground(Color.white);
         backButton.setFocusable(false);
         
         JPanel bot = new JPanel();
@@ -84,9 +86,7 @@ public class LoginFrame extends JFrame {
         bot.add(loginButton);
 
         BodyPane.add(loginPanel, BorderLayout.NORTH);
-        add(bot, BorderLayout.SOUTH);
-        setSize(500, 400);
-        setVisible(true);
+        this.add(bot, BorderLayout.SOUTH);
         
         
         backButton.addActionListener(new ActionListener()

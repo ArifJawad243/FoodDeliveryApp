@@ -12,7 +12,7 @@ public class RegistrationFrame extends JFrame {
     	this.setVisible(true);
     	this.setDefaultCloseOperation(EXIT_ON_CLOSE);
     	this.setLocationRelativeTo(null);
-        //setLayout(new BorderLayout());
+        //this.setLayout(new BorderLayout());
         
         ImageIcon burger = new ImageIcon("images/burger.png");
         this.setIconImage(burger.getImage());
@@ -81,10 +81,12 @@ public class RegistrationFrame extends JFrame {
 
         JButton registerButton = new JButton("Register");
         registerButton.setPreferredSize(new Dimension(100, 25));
+        registerButton.setBackground(Color.green);
         registerButton.setFocusable(false);
         
         JButton backButton = new JButton("Back");
         backButton.setFocusable(false);
+        backButton.setBackground(Color.white);
         backButton.setPreferredSize(new Dimension(100, 25));
         
         
@@ -98,7 +100,7 @@ public class RegistrationFrame extends JFrame {
         
 
         BodyPane.add(registerPanel, BorderLayout.NORTH);
-        add(bot, BorderLayout.SOUTH);
+        this.add(bot, BorderLayout.SOUTH);
         
 
         backButton.addActionListener(new ActionListener()

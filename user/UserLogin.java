@@ -57,6 +57,7 @@ public class UserLogin extends JFrame{
 
         JButton loginButton = new JButton("Login");
         loginButton.setPreferredSize(new Dimension(120, 30));
+        loginButton.setBackground(Color.white);
         loginButton.setFocusable(false);
         log.setPreferredSize(new Dimension(250,250));
         log.setLayout(new FlowLayout(1));
@@ -65,6 +66,7 @@ public class UserLogin extends JFrame{
 
         JButton registerButton = new JButton("Register");
         registerButton.setPreferredSize(new Dimension(120, 30));
+        registerButton.setBackground(Color.white);
         registerButton.setFocusable(false);
         reg.setPreferredSize(new Dimension(250,250));
         reg.setLayout(new FlowLayout(1));
